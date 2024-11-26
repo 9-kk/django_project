@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {#建立一个快速的表格，将被发送到当前使用的url#}
+    <form method="POST" action="">
+        {#添加CSRFtoken，作为一个更安全的数据发送方式#}
+        {#以表格形式传递，默认的Django用户创建表单#}
+        {{ form.as_p }}
+
+        <input type="submit" name="Create User">
+    </form>
+</body>
+</html>
